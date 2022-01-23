@@ -1,0 +1,23 @@
+.box{
+    border:1px solid grey;
+    height:100%;
+    position: relative;
+}
+.button{
+    background-color:green;
+    color:white;
+    width:70px;
+    padding:5px;
+    border-radius: 5px;
+}
+.add-button{
+ position: absolute;
+right:    15px;
+bottom:   15px;
+}
+
+.update-button{
+    position: absolute;
+right:    90px;
+bottom:   15px;
+}
