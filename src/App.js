@@ -16,13 +16,13 @@ function App() {
     });
 
   const addData = (component, text) => {
-    Axios.post("http://localhost:3001/addData", { text, component }).then((res) => {
+    Axios.post("https://tani-react-backend.herokuapp.com/addData", { text, component }).then((res) => {
       const newState = { ...data, [component]: { id: res.data._id, text: res.data.text, component } }
       setdata(newState);
     });
   }
   const updateData = (component, text, id) => {
-    Axios.post("http://localhost:3001/updateData", { id, text, component }).then((res) => {
+    Axios.post("https://tani-react-backend.herokuapp.com/updateData", { id, text, component }).then((res) => {
       setdata({ ...data, [component]: { id: id, text: res.data.text, component } });
     });
   }
